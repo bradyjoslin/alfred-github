@@ -1,5 +1,5 @@
 [package]
-name = "github"
+name = "alfred-github-workflows"
 version = "0.1.0-alpha"
 authors = ["Joslin, Brady W (Brady) <brady@bradyjoslin.com>"]
 edition = "2018"

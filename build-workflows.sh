@@ -14,7 +14,7 @@ function create_workflow {
   cp $OUTPUT_FILE.plist info.plist
 
   # zip it
-  zip -9 -r $OUTPUT_FILE.alfredworkflow icon.png info.plist target/release/github
+  zip -9 -r $OUTPUT_FILE.alfredworkflow icon.png info.plist target/release/alfred-github-workflows
   mv $OUTPUT_FILE.alfredworkflow build/$OUTPUT_FILE.alfredworkflow
   rm -v -rf info.plist
 }

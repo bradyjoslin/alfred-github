@@ -85,7 +85,7 @@ open $URL</string>
 				<key>runningsubtext</key>
 				<string>Loading...</string>
 				<key>script</key>
-				<string>target/release/github "{query}+user:bradyjoslin"</string>
+				<string>target/release/alfred-github-workflows "{query}+user:bradyjoslin"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>

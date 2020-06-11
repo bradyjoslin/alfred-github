@@ -10,6 +10,18 @@ dependencies = [
 ]
 
 [[package]]
+name = "alfred-github-workflows"
+version = "0.1.0-alpha"
+dependencies = [
+ "alfred",
+ "clap",
+ "reqwest",
+ "serde",
+ "serde_json",
+ "tokio",
+]
+
+[[package]]
 name = "arc-swap"
 version = "0.4.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -184,18 +196,6 @@ dependencies = [
  "cfg-if",
  "libc",
  "wasi",
-]
-
-[[package]]
-name = "github"
-version = "0.1.0-alpha"
-dependencies = [
- "alfred",
- "clap",
- "reqwest",
- "serde",
- "serde_json",
- "tokio",
 ]
 
 [[package]]

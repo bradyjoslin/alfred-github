@@ -37,7 +37,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         .get(url.as_str())
         .header(
             reqwest::header::USER_AGENT,
-            reqwest::header::HeaderValue::from_static("reqwest"),
+            reqwest::header::HeaderValue::from_static(env!("CARGO_PKG_NAME")),
         )
         .send()
         .await?
