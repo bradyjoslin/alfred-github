@@ -2,11 +2,11 @@
 
 Rust-based [Alfred](https://www.alfredapp.com/) [workflows](https://www.alfredapp.com/workflows/) for [incrementally](https://en.wikipedia.org/wiki/Incremental_search) searching GitHub repos.
 
-This is the first Alfred Workflow I've created, so done primarily as a learning exercise. There are two workflows created, one to search only my GitHub Repos:
+This is the first Alfred Workflow I've created, so done primarily as a learning exercise. There are two workflows created, one to search only my GitHub Repos...
 
 ![mgh.png](mgh.png)
 
-Another another to search all of GitHub:
+...and another to search all of GitHub:
 
 ![gh.png](gh.png)
 
