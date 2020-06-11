@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>com.bradyjoslin.alfred-test</string>
+	<string>com.bradyjoslin.my-github-search</string>
 	<key>connections</key>
 	<dict>
 		<key>1E189D4B-592A-45ED-A0F5-4457FD5D0A2C</key>
