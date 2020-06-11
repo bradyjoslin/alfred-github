@@ -33,21 +33,19 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let url = format!("https://api.github.com/search/repositories?q={}", query);
 
     let client = reqwest::Client::new();
-    let resp = client
+    let repos = client
         .get(url.as_str())
         .header(
             reqwest::header::USER_AGENT,
             reqwest::header::HeaderValue::from_static("reqwest"),
         )
         .send()
-        .await
-        .unwrap()
+        .await?
         .json::<Items>()
-        .await
-        .unwrap()
+        .await?
         .items;
 
-    let items = resp
+    let items = repos
         .into_iter()
         .map(|item| {
             alfred::ItemBuilder::new(item.full_name.clone())
@@ -60,8 +58,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         })
         .collect::<Vec<alfred::Item>>();
 
-    alfred::json::Builder::with_items(&items)
-        .write(std::io::stdout())
-        .expect("Couldn't write items to Alfred");
+    alfred::json::Builder::with_items(&items).write(std::io::stdout())?;
+
     Ok(())
 }
