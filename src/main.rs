@@ -1,6 +1,5 @@
 extern crate alfred;
 extern crate clap;
-extern crate curl;
 
 use clap::{App, Arg};
 use serde::{Deserialize, Serialize};
